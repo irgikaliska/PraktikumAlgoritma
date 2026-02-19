@@ -32,7 +32,7 @@ public class Selection {
             System.out.println("======================");
             System.out.println("======================");
         }else{
-            double nilaiAkhir = (nilaiKuis + nilaiTugas + nilaiUTS + nilaiUAS) / 4;
+            double nilaiAkhir = (double) (nilaiKuis + nilaiTugas + nilaiUTS + nilaiUAS) / 4;
             String nilaiHuruf;
             boolean lulus = true;
             System.out.println("Nilai Akhir = " + nilaiAkhir);
