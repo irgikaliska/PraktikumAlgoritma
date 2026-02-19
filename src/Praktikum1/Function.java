@@ -1,3 +1,5 @@
+package Praktikum1;
+
 public class Function {
     static int[][] flowerStocks =
             {{10,5,15,7}, {6,11,9,12}, {2,10,10,5}, {5,7,12,9}};
