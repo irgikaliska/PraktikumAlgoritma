@@ -27,7 +27,7 @@ ipk = ipkBaru;
    criteria are used to determine the performance value, and what is returned by the
    nilaiKinerja() method?
 
-if the gpa is less more than or equal to 3.5 then the method will return "Kinerja sangat baik", if gpa is more then or equal to 3.0 it will return "Kinerja baik", if the gpa is more than or equal to 2.0 then it will return "Kinerja cukup", and then if the gpa is less than 2.0 it will return "Kinerja kurang"
+if the gpa is more than or equal to 3.5 then the method will return "Kinerja sangat baik", if gpa is more then or equal to 3.0 it will return "Kinerja baik", if the gpa is more than or equal to 2.0 then it will return "Kinerja cukup", and then if the gpa is less than 2.0 it will return "Kinerja kurang"
 
 ## Question 2.2.3
 
@@ -40,7 +40,7 @@ Mahasiswa14 mhs1 = new Mahasiswa14();
 
 objectname.method/attributes;
 
-3. Why are the output output results of the method tampilkanInformasi() first and second
+3. Why are the output  results of the method tampilkanInformasi() first and second
    different?
 
 because when we call the first one we haven't changed the data yet, but when we call the second one we already changed the data with the other methods
