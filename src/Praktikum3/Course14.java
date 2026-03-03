@@ -13,7 +13,7 @@ public class Course14 {
         this.hour = hour;
     }
 
-    public void addData(String courseCode, String courseName, int credits, String lecturer) {
+    public void addData(String code, String courseName, int credits, String lecturer) {
         this.code = code;
         this.name = name;
         this.sks = sks;

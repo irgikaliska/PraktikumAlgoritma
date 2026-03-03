@@ -1,7 +1,5 @@
 package Praktikum3;
 
-import Praktikum2.Mahasiswa14;
-
 import java.util.Scanner;
 
 public class studentDemo {
