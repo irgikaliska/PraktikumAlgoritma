@@ -21,6 +21,7 @@ public class lecturerDemo {
 
             switch (choice) {
                 case 1:
+                    System.out.println("Add student data: ");
                     System.out.print("ID: ");
                     String id = sc.nextLine();
                     System.out.print("Name: ");
