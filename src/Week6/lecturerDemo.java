@@ -15,7 +15,7 @@ public class lecturerDemo {
             System.out.println("2. Display Data");
             System.out.println("3. Sort ASC");
             System.out.println("4. Sort DSC");
-            System.out.println("0. Exit");
+            System.out.println("5. Exit");
             System.out.print("Choice: ");
             choice = Integer.parseInt(sc.nextLine());
 
@@ -45,13 +45,13 @@ public class lecturerDemo {
                     System.out.println("Sorted DSC by age:");
                     data.print();
                     break;
-                case 0:
+                case 5:
                     System.out.println("Exiting...");
                     break;
                 default:
                     System.out.println("Invalid choice!");
             }
-        } while (choice != 0);
+        } while (choice != 5);
     }
 }
 
