@@ -3,7 +3,7 @@ package Week7;
 public class mergeSort {
 
     public void mergeSort(int[] data) {
-        sort(data, 0, -1 );
+        sort(data, 0, data.length -1 );
     }
 
     public void merge(int data[], int left, int mid, int right) {
@@ -37,5 +37,12 @@ public class mergeSort {
             sort(data, left, mid);
             merge(data, left, mid, right);
         }
+    }
+    public void printArray(int[] arr){
+        int n = arr.length;
+        for (int i = 0; i < n; i++){
+            System.out.println(arr[i] + " ");
+        }
+        System.out.println();
     }
 }
