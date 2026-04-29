@@ -63,6 +63,14 @@ public class studentAssignmentStack14 {
         }
         System.out.println("");
     }
+    Student14 getFirst() {
+        if (!isEmpty()) {
+            return stack[0];
+        } else {
+            System.out.println("There is no data in Stack!!");
+            return null;
+        }
+    }
     String convertToBinary(int grade) {
         conversionStack stack = new conversionStack();
         while (grade > 0) {
@@ -75,6 +83,9 @@ public class studentAssignmentStack14 {
             binary += stack.pop();
         }
         return binary;
+    }
+    int count() {
+        return top + 1;
     }
 
 }
