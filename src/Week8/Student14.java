@@ -6,7 +6,7 @@ public class Student14 {
     String className;
     int grade;
 
-    Student14(String nim, String name, String className{
+    Student14(String nim, String name, String className){
         this.nim = nim;
         this.name = name;
         this.className = className;
