@@ -7,6 +7,7 @@ public class KRSQueueMain {
 
         Scanner sc = new Scanner(System.in);
 
+
         KRSQueue queue = new KRSQueue(10);
 
         int choice;

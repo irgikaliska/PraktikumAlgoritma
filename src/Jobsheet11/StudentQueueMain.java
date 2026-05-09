@@ -77,4 +77,5 @@ public class StudentQueueMain {
             }
         } while (choice != 0);
     }
+
 }

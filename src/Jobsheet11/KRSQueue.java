@@ -109,3 +109,4 @@ public class KRSQueue {
         System.out.println("Students not approved yet: " + (30 - approvedCount));
     }
 }
+

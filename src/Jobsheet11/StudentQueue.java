@@ -95,4 +95,5 @@ public class StudentQueue {
             System.out.println("Queue is empty!!!");
         }
     }
+
 }

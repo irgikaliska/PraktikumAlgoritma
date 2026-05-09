@@ -13,4 +13,5 @@ public class Student {
     void print() {
         System.out.println(nim + " - " + name + " - " + studyProgram + " - " + className);
     }
+
 }
