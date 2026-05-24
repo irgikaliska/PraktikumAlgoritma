@@ -93,7 +93,7 @@ public class DoubleLinkedLists{
                 temp.data.print();
                 temp = temp.next;
             }
-            System.out.println("");
+            System.out.println(" ");
         } else {
             System.out.println("Double linked list is currently empty!");
         }
