@@ -9,10 +9,10 @@ public class Main {
         BuyerQueue queue = new BuyerQueue();
         OrderList orderList = new OrderList();
 
-        queue.addQueue(new Buyer("Irgi", "081234567890"));
-        queue.addQueue(new Buyer("Sebian", "081234567890"));
-        queue.addQueue(new Buyer("Gesang", "081234567890"));
-        queue.addQueue(new Buyer("Surya", "081234567890"));
+        queue.addQueue(new Buyer("Irgi", "081234567890", 1));
+        queue.addQueue(new Buyer("Sebian", "081234567890", 2));
+        queue.addQueue(new Buyer("Gesang", "081234567890", 3));
+        queue.addQueue(new Buyer("Surya", "081234567890", 4));
 
         int choice;
         do {
@@ -22,6 +22,7 @@ public class Main {
             System.out.println("3. Delete Queue (Serve Buyer)");
             System.out.println("4. Order Report");
             System.out.println("5. Exit");
+            System.out.println("6. Cancel Queue");
             System.out.print("Choose menu: ");
             choice = Integer.parseInt(sc.nextLine());
 
@@ -31,7 +32,9 @@ public class Main {
                     String name = sc.nextLine();
                     System.out.print("Enter phone number: ");
                     String phone = sc.nextLine();
-                    queue.addQueue(new Buyer(name, phone));
+                    System.out.println("Enter queue number: ");
+                    int queueNum = Integer.parseInt(sc.nextLine());
+                    queue.addQueue(new Buyer(name, phone, queueNum));
                     break;
 
                 case 2:
@@ -64,11 +67,20 @@ public class Main {
                     System.out.println("Exiting system...");
                     break;
 
+                case 6:
+                    System.out.print("Enter queue number to cancel: ");
+                    int cancelQueueNum = Integer.parseInt(sc.nextLine());
+                    Buyer canceled = queue.cancelQueue(cancelQueueNum);
+                    if (canceled != null) {
+                        System.out.println("Buyer " + canceled.name + " with queue number " + canceled.queueNumber + " has been canceled.");
+                        queue.printQueue();
+                    }
+                    break;
+
                 default:
                     System.out.println("Invalid choice. Try again.");
             }
         } while (choice != 5);
-
         sc.close();
     }
 }
